@@ -127,7 +127,7 @@ def createDiff(original):
 
     # without context
     diff_cmd.append('--changed-group-format=-%<+%>')
-    diff_cmd.append('--unchanged-group-format=')
+    #diff_cmd.append('--unchanged-group-format=') # Not working, removing
 
     diff_cmd.append(settings.FUZZ_DIFF_ORIG)
     diff_cmd.append(settings.FUZZ_DIFF_FUZZ)
